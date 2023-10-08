@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="advstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Advanced Search</h1>
+        <div class="top-right-links">
+            <a href="index.html">Google Search</a>
+            <a href="imagesearch.html">Google Images</a>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <div class="form-group">
+                <label for="allWords">Find pages with… “all these words:”</label>
+                <input type="text" id="allWords" name="q" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exactPhrase">Find pages with… “this exact word or phrase:”</label>
+                <input type="text" id="exactPhrase" name="exactTerms" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="anyWords">Find pages with… “any of these words:”</label>
+                <input type="text" id="anyWords" name="anyTerms" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="noneWords">Find pages with… “none of these words:”</label>
+                <input type="text" id="noneWords" name="excludeTerms" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary btn-advanced-search">Advanced Search</button>
+        </form>
+    </div>
+    <!-- Link to Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
